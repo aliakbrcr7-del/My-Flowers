@@ -1998,127 +1998,6 @@ body {
 
 
 /* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 800px) {
-
-    .topbar {
-        top: 20px;
-
-        left: 20px;
-        right: 20px;
-    }
-
-    .brand {
-        font-size: 7px;
-
-        letter-spacing: 2px;
-    }
-
-    .progress {
-        right: 12px;
-
-        gap: 9px;
-    }
-
-    .progress-item span {
-        display: none;
-    }
-
-    .screen {
-        padding:
-            80px 25px 40px;
-    }
-
-    .scroll-hint {
-        display: none;
-    }
-
-    .answers,
-    .choice-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .answer {
-        min-height: 58px;
-    }
-
-    .choice-card {
-        min-height: 150px;
-    }
-
-    .heart-arena {
-        height: 240px;
-    }
-
-    .final-page {
-        padding: 15px;
-    }
-
-    .final-wrapper {
-        width: 100%;
-
-        height: 95vh;
-
-        grid-template-columns: 1fr;
-
-        overflow-y: auto;
-    }
-
-    .final-visual {
-        min-height: 270px;
-
-        padding: 20px;
-    }
-
-    .final-heart {
-        width: 95px;
-        height: 95px;
-
-        font-size: 35px;
-    }
-
-    .ring-a {
-        width: 140px;
-        height: 140px;
-    }
-
-    .ring-b {
-        width: 190px;
-        height: 190px;
-    }
-
-    .ring-c {
-        width: 240px;
-        height: 240px;
-    }
-
-    .visual-title {
-        margin-top: 30px;
-    }
-
-    .final-content {
-        padding:
-            35px 22px 25px;
-    }
-
-    .final-content h1 {
-        font-size: 43px;
-    }
-
-    .typing-line.important {
-        font-size: 18px;
-    }
-
-    .final-bottom {
-        grid-template-columns:
-            1fr auto 1fr;
-    }
-
-}
-
-/* =========================================
    LIGHT MODE — PREMIUM
 ========================================= */
 
@@ -2128,9 +2007,10 @@ body {
         color .7s ease;
 }
 
-/* -----------------------------------------
+
+/* =========================================
    THEME VARIABLES
------------------------------------------ */
+========================================= */
 
 body.light-mode {
 
@@ -2156,9 +2036,9 @@ body.light-mode {
 }
 
 
-/* -----------------------------------------
+/* =========================================
    LIGHT BACKGROUND
------------------------------------------ */
+========================================= */
 
 body.light-mode .orb {
     opacity: .09;
@@ -2179,18 +2059,18 @@ body.light-mode .orb-3 {
 }
 
 
-/* -----------------------------------------
+/* =========================================
    GRAIN
------------------------------------------ */
+========================================= */
 
 body.light-mode .grain {
     opacity: .018;
 }
 
 
-/* -----------------------------------------
+/* =========================================
    PARTICLES
------------------------------------------ */
+========================================= */
 
 body.light-mode .particle {
     background: rgba(30,20,30,.35);
@@ -2262,9 +2142,9 @@ body.light-mode .particle {
 }
 
 
-/* -----------------------------------------
+/* =========================================
    ICONS
------------------------------------------ */
+========================================= */
 
 .theme-icon {
 
@@ -2657,22 +2537,6 @@ body.light-mode .main-button {
 
 
 /* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 650px) {
-
-    .theme-toggle {
-
-        width: 38px;
-        height: 38px;
-    }
-
-    .theme-icon {
-        font-size: 15px;
-    }
-
-}/* =========================================
    LIGHT MODE — TEXT FIX
 ========================================= */
 
@@ -2692,7 +2556,6 @@ body.light-mode .final-question {
     color: #625b61;
 }
 
-/* متن‌های داخل گزینه‌ها */
 body.light-mode .answer {
     color: #2b262a;
 }
@@ -2701,7 +2564,6 @@ body.light-mode .answer:hover {
     color: #171317;
 }
 
-/* انتخاب‌های بزرگ */
 body.light-mode .big-choice {
     color: #242024;
 }
@@ -2714,7 +2576,6 @@ body.light-mode .big-choice small {
     color: #756e73;
 }
 
-/* متن صفحه اعتراف */
 body.light-mode .letter p {
     color: #514b50;
 }
@@ -2727,7 +2588,6 @@ body.light-mode .signature {
     color: #777075;
 }
 
-/* متن وضعیت بازی */
 body.light-mode .game-status {
     color: #625b61;
 }
@@ -2736,12 +2596,10 @@ body.light-mode .game-status span:first-child {
     color: #df315f;
 }
 
-/* فیدبک جواب‌ها */
 body.light-mode .feedback {
     color: #d83260;
 }
 
-/* دکمه‌ها */
 body.light-mode .main-button {
     color: #242024;
 }
@@ -2758,7 +2616,6 @@ body.light-mode .reveal-button:hover {
     color: #fff;
 }
 
-/* شماره و اطلاعات بالای صفحه */
 body.light-mode .brand {
     color: #625b61;
 }
@@ -2771,11 +2628,11 @@ body.light-mode .counter span:first-child {
     color: #181519;
 }
 
-/* متن‌های کم‌اهمیت‌تر */
 body.light-mode .scene-number,
 body.light-mode .eyebrow {
     color: #d83260;
 }
+
 
 /* =========================================
    LIGHT MODE — ENTER BUTTON
@@ -2797,11 +2654,7 @@ body.light-mode .main-button {
     box-shadow:
         0 8px 25px rgba(40, 25, 35, .08),
         inset 0 1px 0 rgba(255,255,255,.95);
-
 }
-
-
-/* وقتی موس میره روش */
 
 body.light-mode .main-button:hover {
 
@@ -2818,16 +2671,17 @@ body.light-mode .main-button:hover {
         0 16px 40px rgba(25,20,25,.18);
 }
 
-
-/* حالت کلیک */
-
 body.light-mode .main-button:active {
 
     transform:
         translateY(-1px)
         scale(.98);
+}
 
-}/* PRIMARY BUTTON — LIGHT MODE */
+
+/* =========================================
+   PRIMARY BUTTON — LIGHT MODE
+========================================= */
 
 body.light-mode .primary-button,
 body.light-mode .primary-button span,
@@ -2840,611 +2694,320 @@ body.light-mode .primary-button:hover span,
 body.light-mode .primary-button:hover b {
     color: #181519 !important;
 }
+
+
 /* =========================================
-   MOBILE — CLEAN & RESPONSIVE
+   MOBILE — SAME DESKTOP LAYOUT
+   فقط اندازه‌ها کوچک می‌شوند
 ========================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
-    /* ---------- BODY / SCROLL ---------- */
-
-    html {
+    html,
+    body {
         width: 100%;
-        overflow-x: hidden;
-        scrollbar-width: thin;
-        scrollbar-color: rgba(255, 71, 120, .65) transparent;
+        max-width: 100%;
+        min-width: 0;
+        overflow: hidden;
     }
 
     body {
+        height: 100svh;
+    }
+
+    #experience {
         width: 100%;
-        min-height: 100vh;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    /* Chrome / Edge / Safari */
-
-    ::-webkit-scrollbar {
-        width: 4px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: linear-gradient(
-            180deg,
-            #ff4778,
-            #ff91ad
-        );
-
-        border-radius: 999px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #ff4778;
+        height: 100svh;
+        overflow: hidden;
     }
 
 
-    /* ---------- TOPBAR ---------- */
+    /* =========================
+       TOPBAR
+    ========================= */
 
     .topbar {
-        width: 100%;
-        padding: 16px 18px;
+        top: 16px;
+        left: 16px;
+        right: 16px;
     }
 
     .brand {
-        font-size: 9px;
-        letter-spacing: 1.5px;
+        font-size: 7px;
+        letter-spacing: 2px;
+        gap: 7px;
     }
 
     .brand-mark {
-        font-size: 15px;
+        font-size: 11px;
     }
 
     .step-counter {
-        gap: 7px;
-        font-size: 10px;
+        gap: 6px;
+        font-size: 7px;
+        letter-spacing: 1.5px;
+    }
+
+    .step-counter i {
+        width: 16px;
     }
 
     .theme-toggle {
         width: 34px;
         height: 34px;
-        min-width: 34px;
-        border-radius: 50%;
+        flex-shrink: 0;
+    }
+
+    .theme-icon {
+        font-size: 14px;
     }
 
 
-    /* ---------- PROGRESS ---------- */
+    /* =========================
+       PROGRESS
+       عمودی مثل دسکتاپ
+    ========================= */
 
     .progress {
-        width: calc(100% - 36px);
-        margin: 0 auto;
-        padding: 10px 0;
+        top: 50%;
+        right: 9px;
+
+        transform:
+            translateY(-50%);
+
+        width: auto;
+        margin: 0;
+        padding: 0;
+
+        gap: 9px;
     }
 
     .progress-item {
-        width: 27px;
-        height: 27px;
-        font-size: 9px;
+        width: 6px;
+        height: 6px;
+    }
+
+    .progress-item.active {
+        width: 7px;
+        height: 22px;
+    }
+
+    .progress-item span {
+        display: none;
     }
 
 
-    /* ---------- SCREENS ---------- */
+    /* =========================
+       SCREEN
+       ساختار دسکتاپ حفظ می‌شود
+    ========================= */
 
     .screen {
         width: 100%;
-        min-height: calc(100svh - 90px);
-        padding: 35px 18px 45px;
+        min-width: 0;
+        height: 100%;
+        min-height: 0;
+
+        padding:
+            70px 35px 30px 20px;
     }
 
-    .question-layout {
-        width: 100%;
-        max-width: 520px;
-        margin: 0 auto;
-    }
 
-
-    /* ---------- HERO ---------- */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
-        width: 100%;
-        padding: 25px 12px 45px;
+        width: min(800px,100%);
+        min-width: 0;
     }
 
     .mini-label {
-        font-size: 8px;
-        letter-spacing: 1.5px;
+        font-size: 6px;
+        letter-spacing: 2.5px;
         gap: 8px;
+        margin-bottom: 17px;
+    }
+
+    .mini-label span {
+        width: 18px;
     }
 
     .hero-heart {
-        transform: scale(.82);
-        margin: 15px auto;
+        width: 110px;
+        height: 110px;
+        margin: 0 auto 14px;
+    }
+
+    .heart-symbol {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .ring-1 {
+        width: 78px;
+        height: 78px;
+    }
+
+    .ring-2 {
+        width: 112px;
+        height: 112px;
+    }
+
+    .heart-glow {
+        width: 125px;
+        height: 125px;
     }
 
     .overline {
-        font-size: 9px;
-        letter-spacing: 2px;
+        font-size: 6px;
+        letter-spacing: 2.5px;
+        margin-bottom: 10px;
     }
 
     .hero h1 {
-        font-size: clamp(
-            34px,
-            10vw,
-            52px
-        );
+        font-size:
+            clamp(29px,8vw,48px);
 
-        line-height: 1.35;
-        margin: 15px 0;
+        line-height: 1.08;
+        letter-spacing: -1.5px;
+        margin-bottom: 11px;
     }
 
     .hero-description {
-        font-size: 13px;
-        line-height: 2;
-        padding: 0 10px;
+        font-size: 10px;
+        line-height: 1.85;
+        margin-bottom: 17px;
     }
 
     .primary-button {
-        width: min(100%, 300px);
-        min-height: 54px;
-        margin-top: 25px;
-    }
-
-    .scroll-hint {
-        margin-top: 35px;
-    }
-
-
-    /* ---------- QUESTIONS ---------- */
-
-    .question-meta {
-        margin-bottom: 20px;
-    }
-
-    .question-meta span {
-        font-size: 22px;
-    }
-
-    .question-meta small {
-        font-size: 8px;
-        letter-spacing: 1.5px;
-    }
-
-    .question-icon {
-        font-size: 38px;
-        margin-bottom: 14px;
-    }
-
-    .question-layout h2 {
-        font-size: clamp(
-            25px,
-            7.5vw,
-            38px
-        );
-
-        line-height: 1.45;
-        margin: 10px 0 15px;
-    }
-
-    .question-description {
-        font-size: 13px;
-        line-height: 2;
-        padding: 0 5px;
-    }
-
-
-    /* ---------- ANSWERS ---------- */
-
-    .answers {
-        width: 100%;
-        gap: 10px;
-        margin-top: 25px;
-    }
-
-    .answer {
-        width: 100%;
-        min-height: 56px;
-        padding: 13px 15px;
-        font-size: 13px;
-        border-radius: 14px;
-    }
-
-    .answer span {
-        font-size: 9px;
-    }
-
-
-    /* ---------- CHOICE CARDS ---------- */
-
-    .choice-grid {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        margin-top: 25px;
-    }
-
-    .choice-card {
-        min-height: 175px;
-        padding: 17px 12px;
-        border-radius: 17px;
-    }
-
-    .choice-number {
-        font-size: 8px;
-    }
-
-    .choice-emoji {
-        font-size: 32px;
-        margin: 10px 0;
-    }
-
-    .choice-card strong {
-        font-size: 13px;
-        line-height: 1.5;
-    }
-
-    .choice-card small {
-        font-size: 9px;
-        line-height: 1.6;
-        margin-top: 5px;
-    }
-
-
-    /* ---------- FEEDBACK ---------- */
-
-    .feedback {
-        min-height: 24px;
-        margin-top: 15px;
-        padding: 0 5px;
-        font-size: 11px;
-        line-height: 1.8;
-    }
-
-
-    /* ---------- CONFESSION ---------- */
-
-    .confession {
-        padding-bottom: 30px;
-    }
-
-    .unlock-button {
-        width: min(100%, 300px);
-        min-height: 55px;
-        margin-top: 25px;
-    }
-
-    .love-letter {
-        width: 100%;
-        margin-top: 25px;
-        padding: 20px;
-        border-radius: 17px;
-    }
-
-    .letter-body {
-        font-size: 13px;
-        line-height: 2;
-    }
-
-    .letter-sign {
-        font-size: 9px;
-        line-height: 1.8;
-    }
-
-
-    /* ---------- HEART GAME ---------- */
-
-    .game-screen {
-        width: 100%;
-    }
-
-    .heart-arena {
-        width: 100%;
-        height: min(58vh, 430px);
-        min-height: 300px;
-        margin-top: 25px;
-        border-radius: 20px;
-    }
-
-    #gameHeart {
-        width: 58px;
-        height: 58px;
-        font-size: 27px;
-    }
-
-    .arena-text {
-        font-size: 8px;
-        letter-spacing: 2px;
-    }
-
-    .game-score {
-        margin-top: 15px;
-    }
-
-
-    /* ---------- FINAL QUESTION ---------- */
-
-    .final-question h3 {
-        font-size: clamp(
-            18px,
-            5.5vw,
-            27px
-        );
-
-        line-height: 1.7;
-        margin-top: 18px;
-    }
-
-    .final-options {
-        width: 100%;
-        margin-top: 25px;
-    }
-
-    .yes-button,
-    .no-button {
-        width: 100%;
-        min-height: 53px;
-        font-size: 12px;
-        border-radius: 14px;
-    }
-
-    .no-button {
-        margin-top: 10px;
-    }
-
-
-    /* ---------- FINAL PAGE ---------- */
-
-    .final-page {
-        width: 100%;
-        min-height: 100svh;
-        padding: 35px 17px;
-    }
-
-    .final-wrapper {
-        width: 100%;
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .final-visual {
-        width: 100%;
-        min-height: 300px;
-        border-radius: 22px;
-    }
-
-    .visual-title {
-        font-size: 22px;
-        line-height: 1.25;
-    }
-
-    .final-content {
-        width: 100%;
-    }
-
-    .final-content h1 {
-        font-size: clamp(
-            30px,
-            9vw,
-            48px
-        );
-
-        line-height: 1.35;
-    }
-
-    .typing-area {
-        font-size: 13px;
-        line-height: 2.1;
-    }
-
-    .typing-line {
-        margin-bottom: 18px;
-    }
-
-    .secret-answer strong {
-        font-size: 30px;
-    }
-
-    .final-bottom {
-        width: 100%;
-        gap: 12px;
-        flex-wrap: wrap;
-        font-size: 9px;
-    }
-
-    .restart {
-        min-height: 42px;
-        padding: 0 15px;
+        padding: 10px 17px;
         font-size: 10px;
     }
 
+    .primary-button b {
+        font-size: 13px;
+        margin-right: 6px;
+    }
 
-    /* ---------- HIDE DESKTOP CURSOR ---------- */
-
-    .cursor-glow {
+    .scroll-hint {
         display: none;
     }
 
-}
 
+    /* =========================
+       QUESTIONS
+    ========================= */
 
-/* =========================================
-   SMALL PHONES
-========================================= */
-
-@media (max-width: 390px) {
-
-    .topbar {
-        padding: 13px 14px;
+    .question-layout {
+        width: min(720px,100%);
+        min-width: 0;
     }
 
-    .brand {
-        font-size: 8px;
+    .question-meta {
+        gap: 7px;
+        margin-bottom: 14px;
     }
 
-    .screen {
-        padding-left: 14px;
-        padding-right: 14px;
+    .question-meta span {
+        font-size: 7px;
+        letter-spacing: 1.5px;
     }
 
-    .hero h1 {
-        font-size: 32px;
+    .question-meta small {
+        font-size: 6px;
+        letter-spacing: 2px;
     }
 
-    .hero-description {
-        font-size: 12px;
+    .question-icon {
+        width: 48px;
+        height: 48px;
+
+        border-radius: 14px;
+
+        font-size: 19px;
+
+        margin-bottom: 13px;
     }
 
     .question-layout h2 {
-        font-size: 24px;
+        font-size:
+            clamp(20px,5.5vw,32px);
+
+        line-height: 1.3;
+        letter-spacing: -.8px;
+        margin-bottom: 8px;
     }
 
     .question-description {
-        font-size: 12px;
+        font-size: 10px;
+        line-height: 1.85;
+        margin-bottom: 15px;
     }
 
+
+    /* =========================
+       ANSWERS
+       حتماً دو ستونه
+    ========================= */
+
+    .answers {
+        width: min(600px,100%);
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap: 7px;
+    }
+
+    .answer {
+        min-width: 0;
+        min-height: 48px;
+
+        border-radius: 12px;
+
+        padding:
+            8px 7px;
+
+        font-size: 9px;
+        line-height: 1.5;
+    }
+
+    .answer span {
+        left: 7px;
+        top: 6px;
+        font-size: 6px;
+    }
+
+    .answer:hover {
+        transform:
+            translateY(-2px);
+    }
+
+
+    /* =========================
+       CHOICE CARDS
+       حتماً دو ستونه
+    ========================= */
+
     .choice-grid {
+        width: min(650px,100%);
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
         gap: 8px;
     }
 
     .choice-card {
-        min-height: 165px;
-        padding: 14px 9px;
-    }
-
-    .choice-card strong {
-        font-size: 12px;
-    }
-
-    .heart-arena {
-        min-height: 270px;
-        height: 52vh;
-    }
-
-}
-
-
-/* =========================================
-   VERY SMALL PHONES
-========================================= */
-
-@media (max-width: 340px) {
-
-    .brand {
-        display: none;
-    }
-
-    .topbar {
-        justify-content: flex-end;
-    }
-
-    .choice-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .choice-card {
-        min-height: 125px;
-    }
-
-    .final-visual {
-        min-height: 260px;
-    }
-
-}
-/* =========================================
-   MOBILE RESPONSIVE — LAYOUT PRESERVED
-   فقط تنظیم اندازه و عرض صفحه
-========================================= */
-
-@media (max-width: 650px) {
-
-    html {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    body {
-        width: 100%;
-        max-width: 100%;
         min-width: 0;
-        margin: 0;
-        overflow-x: hidden;
+        min-height: 135px;
+
+        padding: 12px 8px;
+
+        border-radius: 16px;
     }
 
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
-
-    main,
-    .screen,
-    .hero,
-    .question-layout,
-    .final-page {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    img,
-    video,
-    canvas,
-    svg {
-        max-width: 100%;
-    }
-
-    button {
-        max-width: 100%;
-    }
-
-    /* جلوگیری از بیرون زدن متن‌های بلند */
-
-    h1,
-    h2,
-    h3,
-    p,
-    span,
-    strong,
-    small {
-        max-width: 100%;
-        overflow-wrap: break-word;
-    }
-
-    /* هیچ المانی به خاطر عرض زیاد صفحه را نمی‌کشد */
-
-    .topbar,
-    .progress,
-    .answers,
-    .choice-grid,
-    .final-options,
-    .heart-arena,
-    .love-letter {
-        max-width: 100%;
-    }
-
-    /* اگر کارت‌ها Grid دارند، عرضشان محدود می‌شود
-       بدون تغییر چیدمان */
-
-    .choice-card,
-    .answer,
-    .primary-button,
-    .unlock-button,
-    .yes-button,
-    .no-button {
-        max-width: 100%;
-    }
-
-    /* اسکرول افقی ممنوع */
-
-    .background,
-    .noise,
-    .cursor-glow,
-    .final-bg,
-    .final-orb,
-    #heartRain {
-        max-width: 100vw;
-    }
-
-}
+    .choice-number {
+        top
