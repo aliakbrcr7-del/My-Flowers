@@ -3448,3 +3448,252 @@ body.light-mode .primary-button:hover b {
     }
 
 }
+/* =========================
+   MOBILE RESPONSIVE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    /* Topbar */
+    .topbar {
+        width: calc(100% - 24px);
+        margin: 12px auto 0;
+        padding: 10px 14px;
+        border-radius: 16px;
+    }
+
+    .topbar .logo {
+        font-size: 16px;
+    }
+
+    .theme-toggle {
+        width: 34px;
+        height: 34px;
+    }
+
+    /* Progress */
+    .progress {
+        gap: 5px;
+    }
+
+    .progress-item {
+        font-size: 9px;
+    }
+
+    /* Main */
+    #experience {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0 14px;
+    }
+
+    /* Screens */
+    .screen {
+        width: 100%;
+        min-height: calc(100vh - 80px);
+        padding: 70px 8px 30px;
+    }
+
+    /* Main titles */
+    .screen h1 {
+        font-size: clamp(24px, 7vw, 32px);
+        line-height: 1.4;
+    }
+
+    .screen h2 {
+        font-size: 20px;
+        line-height: 1.7;
+    }
+
+    .screen p {
+        font-size: 13px;
+        line-height: 2;
+    }
+
+    /* Intro */
+    .intro-title {
+        font-size: clamp(34px, 11vw, 52px);
+    }
+
+    .intro-subtitle {
+        font-size: 13px;
+    }
+
+    /* Buttons */
+    button {
+        max-width: 100%;
+    }
+
+    .answer-btn,
+    .choice-btn,
+    .glass-btn {
+        width: 100%;
+        min-height: 52px;
+        padding: 12px 16px;
+        font-size: 13px;
+        border-radius: 14px;
+    }
+
+    /* Answer groups */
+    .answers,
+    .options,
+    .choices {
+        width: 100%;
+        gap: 10px;
+        margin-top: 22px;
+    }
+
+    /* Question cards */
+    .question-card,
+    .glass-card,
+    .message-card,
+    .letter-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 16px;
+        border-radius: 20px;
+    }
+
+    /* First hello */
+    #screen-first-hello .message {
+        max-width: 100%;
+        padding: 0 4px;
+    }
+
+    /* Q2 cards */
+    #screen-2 .choice-grid {
+        width: 100%;
+        gap: 10px;
+    }
+
+    #screen-2 .choice-card {
+        min-height: 65px;
+        padding: 12px;
+        border-radius: 15px;
+    }
+
+    #screen-2 .choice-card h3 {
+        font-size: 14px;
+    }
+
+    #screen-2 .choice-card p {
+        font-size: 11px;
+    }
+
+    /* Private message */
+    #screen-5 .message-card,
+    #screen-letter .letter-card {
+        padding: 22px 17px;
+    }
+
+    /* Letter */
+    #screen-letter p {
+        font-size: 13px;
+        line-height: 2.1;
+    }
+
+    /* Heart game */
+    #heartArena {
+        width: 100%;
+        height: 55vh;
+        min-height: 300px;
+        max-height: 500px;
+        border-radius: 20px;
+    }
+
+    #gameHeart {
+        font-size: 34px;
+    }
+
+    #score {
+        font-size: 14px;
+    }
+
+    /* Final page */
+    #finalPage {
+        width: 100%;
+        padding: 25px 16px;
+    }
+
+    #finalPage h1 {
+        font-size: 27px;
+    }
+
+    #finalPage p,
+    #finalPage .typing-line {
+        font-size: 13px;
+        line-height: 2.1;
+    }
+
+    /* Prevent oversized decorative elements */
+    .heart {
+        transform: scale(.75);
+    }
+
+    .orb {
+        transform: scale(.7);
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+    }
+}
+
+
+/* Smaller phones */
+@media (max-width: 380px) {
+
+    .topbar {
+        width: calc(100% - 18px);
+        padding: 8px 11px;
+    }
+
+    .screen {
+        padding: 60px 5px 25px;
+    }
+
+    .screen h1 {
+        font-size: 23px;
+    }
+
+    .screen h2 {
+        font-size: 18px;
+    }
+
+    .screen p {
+        font-size: 12px;
+    }
+
+    .answer-btn,
+    .choice-btn,
+    .glass-btn {
+        min-height: 48px;
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+    #heartArena {
+        height: 50vh;
+        min-height: 280px;
+    }
+
+    #gameHeart {
+        font-size: 30px;
+    }
+}
