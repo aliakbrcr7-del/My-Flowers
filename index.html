@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You — A Little Love Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="cursor-glow"></div>
+
+
+<div class="background">
+
+    <div class="bg-orb orb-a"></div>
+    <div class="bg-orb orb-b"></div>
+    <div class="bg-orb orb-c"></div>
+
+</div>
+
+
+<div class="noise"></div>
+
+
+<!-- =========================
+     TOPBAR
+========================== -->
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <span class="brand-mark">♥</span>
+
+        <span>
+            OUR LITTLE WORLD
+        </span>
+
+    </div>
+
+
+    <div class="step-counter">
+
+        <span id="stepCurrent">
+            01
+        </span>
+
+        <i></i>
+
+        <span>
+            06
+        </span>
+
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+        >
+
+            <span class="theme-icon sun">
+                ☀
+            </span>
+
+            <span class="theme-icon moon">
+                ☾
+            </span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     PROGRESS
+========================== -->
+
+<div class="progress">
+
+    <span class="progress-line"></span>
+
+
+    <div class="progress-item active">
+        <span>01</span>
+    </div>
+
+
+    <div class="progress-item">
+        <span>02</span>
+    </div>
+
+
+    <div class="progress-item">
+        <span>03</span>
+    </div>
+
+
+    <div class="progress-item">
+        <span>04</span>
+    </div>
+
+
+    <div class="progress-item">
+        <span>05</span>
+    </div>
+
+
+    <div class="progress-item">
+        <span>06</span>
+    </div>
+
+</div>
+
+
+
+<main id="experience">
+
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <section
+        class="screen active"
+        id="screen-0"
+    >
+
+        <div class="hero">
+
+
+            <div class="mini-label">
+
+                <span></span>
+
+                A PRIVATE LITTLE EXPERIENCE
+
+                <span></span>
+
+            </div>
+
+
+
+            <div class="hero-heart">
+
+                <div class="heart-glow"></div>
+
+                <div class="heart-ring ring-1"></div>
+
+                <div class="heart-ring ring-2"></div>
+
+                <div class="heart-symbol">
+                    ♥
+                </div>
+
+            </div>
+
+
+
+            <p class="overline">
+                MADE ESPECIALLY FOR YOU
+            </p>
+
+
+
+            <h1>
+
+                یه جای کوچیک
+
+                <em>
+                    برای تو.
+                </em>
+
+            </h1>
+
+
+
+            <p class="hero-description">
+
+                یه بازی کوچیکه...
+
+                <br>
+
+                ولی شاید آخرش یه چیز مهم‌تر از بازی منتظرت باشه.
+
+            </p>
+
+
+
+            <button
+                class="primary-button"
+                onclick="startGame()"
+            >
+
+                <span>
+                    واردش شو
+                </span>
+
+                <b>
+                    ↗
+                </b>
+
+            </button>
+
+
+
+            <div class="scroll-hint">
+
+                <span>
+                    SCROLL
+                </span>
+
+                <i></i>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FIRST HELLO
+    ========================== -->
+
+    <section
+        class="screen"
+        id="screen-first-hello"
+    >
+
+        <div class="question-layout final-question">
+
+
+            <div class="question-meta">
+
+                <span>
+                    01
+                </span>
+
+                <small>
+                    THE FIRST HELLO
+                </small>
+
+            </div>
+
+
+
+            <div class="question-icon final-icon">
+                👀
+            </div>
+
+
+
+            <h2>
+                یه چیزی رو باید بدونی.
+            </h2>
+
+
+
+            <p class="question-description">
+
+                شاید برات عجیب باشه که یه نفر برای گفتن
+                <br>
+                چندتا حرف، یه همچین راهی رو انتخاب کرده. 😂
+
+                <br><br>
+
+                ولی راستش...
+
+                <br>
+
+                من تا حالا فرصت نکردم درست و حسابی باهات حرف بزنم.
+
+            </p>
+
+
+
+            <h3>
+                این بازی شاید فقط یه بهونه است...
+            </h3>
+
+
+
+            <p class="question-description">
+
+                برای اینکه بالاخره بتونم یه چیزی رو بهت بگم.
+
+            </p>
+
+
+
+            <div class="final-options">
+
+
+                <button
+                    class="yes-button"
+                    onclick="startQuestions()"
+                >
+
+                    ❤️ بزن بریم
+
+                </button>
+
+
+
+                <button
+                    class="no-button"
+                    id="noButton"
+                    onclick="runAway()"
+                >
+
+                    😐 برو بابا
+
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUESTION 1
+         THE SUSPECT
+    ========================== -->
+
+    <section
+        class="screen"
+        id="screen-1"
+    >
+
+        <div class="question-layout">
+
+
+            <div class="question-meta">
+
+                <span>
+                    02
+                </span>
+
+                <small>
+                    THE SUSPECT
+                </small>
+
+            </div>
+
+
+
+            <div class="question-icon">
+                👀
+            </div>
+
+
+
+            <h2>
+                اینجا یه پرونده‌ی مشکوک داریم.
+            </h2>
+
+
+
+            <p class="question-description">
+
+                یه نفر بدون اجازه وارد قلب من شده.
+
+                <br>
+
+                طبق شواهد موجود، بنظرت مظنون کیه؟
+
+            </p>
+
+
+
+            <div class="answers">
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 1)"
+                >
+
+                    <span>
+                        01
+                    </span>
+
+                    من؟ محاله 🕵🏻
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="correctAnswer(this, 1)"
+                >
+
+                    <span>
+                        02
+                    </span>
+
+                    احتمالاً خودمم 😌
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 1)"
+                >
+
+                    <span>
+                        03
+                    </span>
+
+                    من از این پرونده بی‌خبرم 🏃🏻
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 1)"
+                >
+
+                    <span>
+                        04
+                    </span>
+
+                    یه نفر دیگه‌ست، شک ندارم 😐
+
+                </button>
+
+
+            </div>
+
+
+
+            <div
+                class="feedback"
+                id="feedback-1"
+            ></div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUESTION 2
+         DANGEROUS CHOICE
+    ========================== -->
+
+    <section
+        class="screen"
+        id="screen-2"
+    >
+
+        <div class="question-layout">
+
+
+            <div class="question-meta">
+
+                <span>
+                    03
+                </span>
+
+                <small>
+                    DANGEROUS CHOICE
+                </small>
+
+            </div>
+
+
+
+            <div class="question-icon">
+                💸
+            </div>
+
+
+
+            <h2>
+                این به شدت مهمه...
+            </h2>
+
+
+
+            <p class="question-description">
+
+                فقط یکی رو می‌تونی انتخاب کنی.
+
+                <br>
+
+                دقت کن؛ فقط یکم باید منطقی فکر کنی. 
+
+            </p>
+
+
+
+            <div class="choice-grid">
+
+
+                <button
+                    class="choice-card"
+                    onclick="chooseMoney()"
+                >
+
+                    <div class="choice-number">
+                        01
+                    </div>
+
+                    <div class="choice-emoji">
+                        💰
+                    </div>
+
+                    <strong>
+                        یک میلیون دلار
+                    </strong>
+
+                    <small>
+                        انتخاب غیر هوشمندانه...
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    class="choice-card"
+                    onclick="chooseMoney()"
+                >
+
+                    <div class="choice-number">
+                        02
+                    </div>
+
+                    <div class="choice-emoji">
+                        🏎️
+                    </div>
+
+                    <strong>
+                        یه ماشین خفن
+                    </strong>
+
+                    <small>
+                        انتخاب بدی نیست...
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    class="choice-card"
+                    onclick="chooseMoney()"
+                >
+
+                    <div class="choice-number">
+                        03
+                    </div>
+
+                    <div class="choice-emoji">
+                        🌴
+                    </div>
+
+                    <strong>
+                        سفر دور دنیا
+                    </strong>
+
+                    <small>
+                        وسوسه‌کننده‌ست...
+                    </small>
+
+                </button>
+
+
+
+                <button
+                    class="choice-card"
+                    onclick="chooseMe()"
+                >
+
+                    <div class="choice-number">
+                        04
+                    </div>
+
+                    <div class="choice-emoji">
+                        ❤️
+                    </div>
+
+                    <strong>
+                        من ❤️
+                    </strong>
+
+                    <small>
+                        انتخاب کاملاً منطقی. 
+                    </small>
+
+                </button>
+
+
+            </div>
+
+
+
+            <div
+                class="feedback"
+                id="feedback-2"
+            ></div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUESTION 3
+         FIRST DATE
+    ========================== -->
+
+    <section
+        class="screen"
+        id="screen-3"
+    >
+
+        <div class="question-layout">
+
+
+            <div class="question-meta">
+
+                <span>
+                    04
+                </span>
+
+                <small>
+                    FIRST DATE
+                </small>
+
+            </div>
+
+
+
+            <div class="question-icon">
+                📍
+            </div>
+
+
+
+            <h2>
+                اولین قرارمون کجا باشه؟ 
+            </h2>
+
+
+
+            <p class="question-description">
+
+                خب بالاخره باید یه جایی شروع کنیم دیگه...
+
+                <br>
+
+                ببینم انتخابت چیه. 😌
+
+            </p>
+
+
+
+            <div class="answers">
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 3)"
+                >
+
+                    <span>
+                        01
+                    </span>
+
+                     یه رستوران خفن 🍝
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 3)"
+                >
+
+                    <span>
+                        02
+                    </span>
+
+                     سینما 🎬
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 3)"
+                >
+
+                    <span>
+                        03
+                    </span>
+
+                    یه کافه دنج ☕
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="correctAnswer(this, 3)"
+                >
+
+                    <span>
+                        04
+                    </span>
+
+                    پیاده‌روی 🚶‍♂️
+
+                </button>
+
+
+            </div>
+
+
+
+            <div
+                class="feedback"
+                id="feedback-3"
+            ></div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUESTION 4
+         WHAT SHOULD WE EAT?
+    ========================== -->
+
+    <section
+        class="screen"
+        id="screen-4"
+    >
+
+        <div class="question-layout">
+
+
+            <div class="question-meta">
+
+                <span>
+                    05
+                </span>
+
+                <small>
+                    WHAT SHOULD WE EAT?
+                </small>
+
+            </div>
+
+
+
+            <div class="question-icon">
+                🍽️
+            </div>
+
+
+
+            <h2>
+                خب... چی بخوریم؟ 😂
+            </h2>
+
+
+
+            <p class="question-description">
+
+                این یکی رو دیگه با دقت انتخاب کن...
+
+                <br>
+
+                چون قراره خیلی منطقی باشه. 😌
+
+            </p>
+
+
+
+            <div class="answers">
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 4)"
+                >
+
+                    <span>
+                        01
+                    </span>
+
+                     پیتزا 🍕
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 4)"
+                >
+
+                    <span>
+                        02
+                    </span>
+
+                     برگر 🍔
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="wrongAnswer(this, 4)"
+                >
+
+                    <span>
+                        03
+                    </span>
+
+                     بستنی 🍦
+
+                </button>
+
+
+
+                <button
+                    class="answer"
+                    onclick="correctAnswer(this, 4)"
+                >
+
+                    <span>
+                        04
+                    </span>
+
+                     آب و هوا 🌀
+
+                </button>
+
+
+            </div>
+
+
+
+            <div
+                class="feedback"
+                id="feedback-4"
+            ></div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         OPEN MESSAGE
+    ========================== -->
+
+    <section
+        class="screen"
+        id="screen-5"
+    >
+
+        <div class="question-layout confession">
+
+
+            <div class="question-meta">
+
+                <span>
+                    06
+                </span>
+
+                <small>
+                    PRIVATE MESSAGE
+                </small>
+
+            </div>
+
+
+
+            <div class="question-icon">
+                🤫
+            </div>
+
+
+
+            <h2>
+ولی خب یه چیزی رو باید بهت بگم
+            </h2>
+
+
+
+            <p class="question-description">
+
+                این یکی جواب درست و غلط نداره.
+
+                <br>
+
+                فقط باید جرئت کنی بازش کنی.
+
+            </p>
+
+
+
+            <button
+                class="unlock-button"
+                onclick="unlockLetter()"
+            >
+
+                <span>
+                    🔐
+                </span>
+
+                <b>
+                    باز کردن پیام
+                </b>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         PRIVATE MESSAGE
+    ========================== -->
+
+    <section
+        class="screen"
+        id="screen-letter"
+    >
+
+        <div class="question-layout confession letter-page">
+
+
+            <div class="question-meta">
+
+                <span>
+                    06
+                </span>
+
+                <small>
+                    PRIVATE MESSAGE
+                </small>
+
+            </div>
+
+
+
+            <div class="question-icon">
+                💌
+            </div>
+
+
+
+            <h2>
+                یه پیام برای تو...
+            </h2>
+
+
+
+            <div class="love-letter">
+
+
+                <div class="letter-top">
+
+                    <span>
+                        PRIVATE
+                    </span>
+
+                    <span>
+                        ♥
+                    </span>
+
+                </div>
+
+
+
+                <div class="letter-body">
+
+
+                    <p>
+                        تو از اون آدمایی نیستی که فقط وارد زندگی آدم میشن.
+                    </p>
+
+
+
+                    <p>
+
+                        بعضیا میان،
+                        یه جایی توی زندگی آدم پیدا می‌کنن
+                        و بعد یه روز می‌بینی...
+                        دیگه دلت نمی‌خواد اونجا خالی بشه.
+
+                    </p>
+
+
+
+                    <strong>
+                        تو برای من از همونایی. ❤️
+                    </strong>
+
+
+                </div>
+
+
+
+                <div class="letter-sign">
+
+                    — از طرف کسی که خیلی بیشتر از چیزی که میگه دوستت داره.
+
+                </div>
+
+
+            </div>
+
+
+
+            <button
+                class="primary-button letter-next"
+                onclick="goToScreen('screen-6')"
+            >
+
+                <span>
+                    ادامه
+                </span>
+
+                <b>
+                    ↗
+                </b>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CATCH MY HEART
+    ========================== -->
+
+    <section
+        class="screen"
+        id="screen-6"
+    >
+
+        <div class="question-layout game-screen">
+
+
+            <div class="question-meta">
+
+                <span>
+                    06
+                </span>
+
+                <small>
+                    CATCH MY HEART
+                </small>
+
+            </div>
+
+
+
+            <h2>
+                حالا قلبمو بگیر.
+            </h2>
+
+
+
+            <p class="question-description">
+
+                ولی خب... فکر نکنم خیلی آسون باشه. 😏
+
+            </p>
+
+
+
+            <div
+                class="heart-arena"
+                id="heartArena"
+            >
+
+                <button
+                    id="gameHeart"
+                    onclick="catchHeart()"
+                >
+                    ♥
+                </button>
+
+
+                <div class="arena-text">
+                    CATCH IT
+                </div>
+
+
+            </div>
+
+
+
+            <div class="game-score">
+
+                <strong id="score">
+                    0
+                </strong>
+
+                <span>
+                    / 5
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+<!-- =========================
+     FINAL EXPERIENCE
+========================== -->
+
+<section
+    class="final-page"
+    id="finalPage"
+>
+
+
+    <div class="final-bg"></div>
+
+
+    <div
+        class="final-orb orb-final-a"
+    ></div>
+
+
+    <div
+        class="final-orb orb-final-b"
+    ></div>
+
+
+
+    <div class="final-wrapper">
+
+
+        <div class="final-visual">
+
+
+            <div class="visual-header">
+
+                <span>
+                    PRIVATE
+                </span>
+
+                <span>
+                    ♥
+                </span>
+
+            </div>
+
+
+
+            <div class="visual-center">
+
+
+                <div class="final-heart">
+                    ♥
+                </div>
+
+
+                <div
+                    class="final-rings ring-a"
+                ></div>
+
+
+                <div
+                    class="final-rings ring-b"
+                ></div>
+
+
+                <div
+                    class="final-rings ring-c"
+                ></div>
+
+
+
+                <div class="visual-title">
+
+                    YOU WERE
+                    <br>
+                    THE ANSWER
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="visual-footer">
+
+                <span>
+                    LOVE GAME
+                </span>
+
+                <span>
+                    COMPLETE
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="final-content">
+
+
+            <div class="final-status">
+                GAME OVER
+            </div>
+
+
+
+            <h1>
+
+                خب...
+
+                <span>
+                    بازی تموم شد.
+                </span>
+
+            </h1>
+
+
+
+            <div class="accent-line"></div>
+
+
+
+            <div class="typing-area">
+
+
+                <p
+                    class="typing-line"
+                    data-text="از اولش قرار بود فقط یه بازی باشه؛ چندتا سؤال، چندتا انتخاب و یه عالمه اذیت کردنت. 😂"
+                ></p>
+
+
+
+                <p
+                    class="typing-line important"
+                    data-text="ولی یه چیزی رو نمی‌دونستی..."
+                ></p>
+
+
+
+                <p
+                    class="typing-line"
+                    data-text="این بازی قرار نبود بفهمه تو چقدر منو می‌شناسی. قرار بود آخرش بفهمی چرا اصلاً این بازی رو برات ساختم."
+                ></p>
+
+
+
+                <p
+                    class="typing-line"
+                    data-text="چون بین تمام گزینه‌هایی که توی این بازی دیدی، انتخاب من از اول مشخص بود."
+                ></p>
+
+
+
+                <div class="secret-answer">
+
+
+                    <span
+                        class="typing-line"
+                        data-text="جواب درست از همون اول جلوی چشمت بود..."
+                    ></span>
+
+
+
+                    <strong
+                        class="typing-line"
+                        data-text="خودِ تو."
+                    ></strong>
+
+
+                </div>
+
+
+
+                <p
+                    class="typing-line final-love-text"
+                    data-text="این بازی تموم شد، ولی چیزی که باعث شد بسازمش هنوز ادامه داره. ❤️"
+                ></p>
+
+
+            </div>
+
+
+
+            <div class="final-bottom">
+
+
+                <span>
+                    GAME OVER
+                </span>
+
+
+
+                <button
+                    class="restart"
+                    onclick="restartGame()"
+                >
+
+                    ↻ دوباره از اول
+
+                </button>
+
+
+
+                <span class="win">
+                    YOU WIN ♥
+                </span>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <div id="heartRain"></div>
+
+
+</section>
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
